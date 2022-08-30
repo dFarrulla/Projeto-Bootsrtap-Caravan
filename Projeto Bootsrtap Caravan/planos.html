@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"  />
+    <title>Caravan Planos</title>
+  </head>
+  <body>
+    <!--Modal-->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogintitulo" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLogintitulo">Entre na Sua Conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail"> Email</label>
+                <input type="email" class="form-control" id="loginEmail">
+              </div>
+              <div class="form-group">
+                <label for="loginSenha">Senha</label>
+                <input type="password" class="form-control" id="loginSenha">
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui.</a></small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+      <a class="navbar-brand" href="index.html">
+      <img src="img/caravan.svg" alt="Caravam"> 
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Locais </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">Califórnia</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="planos.html">Planos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html"> Contato </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin"> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ml-md-2" href="inscricao.html"> Inscreva-se</a>
+          </li>
+          </ul>
+        </div>
+    </nav>
+    <!-----------------fecha a navegação--------------->
+
+    <section class="container">
+      <div class="text-center my-5">
+        <span class="h6 d-block "> SEU PLANO SUA VIAGEM</span>
+        <h1 class="display-4 text-primary">Escolha o Plano</h1>
+      </div>
+     <div class="row">
+      <div class="col-md mb-5">
+      <div class="col bg-light rounded p-4 box-shadow">
+        <h2>Gold</h2>
+        <ul class=" lista-plano list-unstyled">
+          <li>🠒 30 dias de viagem</li>
+          <li>🠒 3 destinos diferentes</li>
+          <li>🠒 Tudo pago pela empresa</li>
+          <li>🠒 Ingressos para festas</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-control" id="inputÇidades bg-light">
+                <option>Selecione Cidades</option>
+                <option>Califórnia</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+               </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscrição.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$5.000</span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md mb-5">
+      <div class="col bg-light rounded p-4 box-shadow">
+        <h2>Platinum  <span class="badge badge-success">Novo</span></h2>
+        <ul class=" lista-plano list-unstyled">
+          <li>🠒 60 dias de viagem</li>
+          <li>🠒 6 destinos diferentes</li>
+          <li>🠒 Tudo pago pela empresa</li>
+          <li>🠒 Ingressos para festas</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-control" id="inputÇidades bg-light">
+                <option>Selecione Cidades</option>
+                <option>Califórnia</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+               </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscrição.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$7.500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+   <!------------FOOTER---------------->
+
+<footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3">
+              <h4 class="h6">Páginas</h6>
+                <ul class="list-unstyled">
+                  <li><a href="planos.html">Planos</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="inscricao.html">Inscreva-se</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+              <h4 class="h6">Locais</h6>
+                <ul class="list-unstyled">
+                  <li><a href="local.html">Califórnia</a></li>
+                  <li><a href="local.html">Paris</a></li>
+                  <li><a href="local.html">Dublin</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+              <h4 class="h6"> DADOS DE CONTATO </h4>
+              <ul class="list-unstyled text-secondary">
+                <li>caravan@caravan.com.br</li>
+                <li>21-99696-9696</li>
+                <li>De Seg. à Sex. das 8h às 18h</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4 class="h6 list-unstyled"> REDES SOCIAIS </h4>
+              <ul class="list-unstyled">
+                <li> <a class="btn btn-outline-secondary btn-sm btn-block mb-2 style=max-width: 140px" href="#"> Facebook </a></li>
+                <li> <a class="btn btn-outline-secondary btn-sm btn-block mb-2 style=max-width: 140px" href="#"> Twitter </a></li>
+                <li> <a class="btn btn-outline-secondary btn-sm btn-block mb-2 style=max-width: 140px" href="#"> Youtube </a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">Caravan @ 2022. Alguns direitos reservados.</p>
+      </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
